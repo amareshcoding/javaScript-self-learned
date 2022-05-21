@@ -176,6 +176,10 @@
 //Code Execution Phase
  
 
+
+//when a function is initialisation as a variable it also act as an variable
+
+
 //window is the global object in Js
 
 //Js-> a Syncronous Programing Language/single thread
