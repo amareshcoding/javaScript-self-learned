@@ -1,4 +1,10 @@
-
+//Global Execution Context
+//1. Creation Phase 
+//i. window object, this = window
+//ii. hoisting
+//2. Code Execution Phase
+//3. memory alocation
+ 
 console.log(this);
 console.log(window);
 console.log(myFunc);
@@ -26,3 +32,12 @@ const myFunc1 = function (){
 var name1 = 'Amaresh';
 let name2 = 'Amaresh';
 const name3 = 'Amaresh';
+
+// TDZ-temporal dead zone
+//the temporary period between variable declaration and initialisation
+
+
+//Execution context
+//1. global 2. function
+
+
