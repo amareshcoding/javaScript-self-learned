@@ -31,3 +31,15 @@ console.log('rootNode: ', rootNode.childNodes);
 const html = rootNode.childNodes[1];
 console.log('html: ', html);
 console.log('html: ', html.childNodes);
+
+
+
+// append
+// prepend
+
+
+// getBoundingClientRect()
+// to find the height , width and other info if an element
+
+// Event Object
+
