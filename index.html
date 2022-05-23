@@ -5,21 +5,27 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>javaScript</title>
+     <style>
+          *{
+               /* white-space: normal; */
+               /* white-space: pre; */
+          }
+     </style>
 </head>
 <body>
-     <h1>javaScript</h1>
+     <h1 id="heading" style="color: teal;">javaScript</h1>
 </body>
 <!-- <script src="./index.js"></script> -->
 <!-- <script src="./eg_1.js"></script> -->
 <!-- <script src="./scope-chain.js"></script> -->
-<script src="./closures.js"></script>
-
-
-
-
-
-
-
+<!-- <script src="./closures.js"></script> -->
+<script src="./dom.js"></script>
 
 
 </html>
+<!-- 
+     async: download of js file is running along with parsing of html but when dounload of js is done
+          the parsing of html is stopes and execution of js started, which may generate error
+     differ: in defer the js file download is along with html parsing and only execute after the parsing of html file
+          this is the best way.
+-->
