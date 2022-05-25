@@ -1,3 +1,4 @@
+//setTimeOut
 
 // console.log("before");
 
@@ -8,13 +9,16 @@
 // console.log("after");
 
 
-console.log("before");
+//clearTimeOut
+// console.log("before");
 
-const id = setTimeout(()=>{
-     console.log("inside");
-},100);
+// const id = setTimeout(()=>{
+//      console.log("inside");
+// },100);
 
-clearTimeout(id);
+// clearTimeout(id);
 
-console.log("after");
+// console.log("after");
+
+
 
