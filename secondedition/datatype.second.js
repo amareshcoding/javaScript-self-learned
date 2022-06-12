@@ -164,7 +164,10 @@ console.log(mat[2][3]);
 let arr1 = new Array(4);
 console.log('arr1: ', arr1);
 
-
+//Array iteration
+for(let i = 0; i<arr.length; i++){
+     console.log(arr[i]);
+}
 
 
 
