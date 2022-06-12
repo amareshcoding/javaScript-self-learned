@@ -120,6 +120,46 @@ console.log(str10.includes('Str'));
 //Array
 let arr = [4,2,3,1,6,7];
 console.log('arr: ', arr);
+console.log(arr.length);
+console.log(arr[2]);
+
+//Push/Pop -->
+const popValue = arr.pop();
+console.log('popValue: ', popValue);
+arr.push(18);
+console.log(arr);
+
+//Shift/Unshift -->
+const shiftValue = arr.shift();
+console.log('shiftValue: ', shiftValue);
+arr.unshift(23);
+console.log(arr);
+
+//Splice
+arr.splice(2,1)
+console.log('arr: ', arr);
+
+//Join
+arr.join(' ');
+console.log('arr: ', arr);
+
+
+
+//
+// arr.length = 0;
+// console.log('arr: ', arr);
+
+
+
+//Multidimentional Array
+let mat = [
+     [1, 3, 5, 6],
+     [4, 5, 7, 9],
+     [2, 1, 7, 3]
+];
+//row = 3
+//col = 4
+console.log(mat[2][3]);
 
 let arr1 = new Array(4);
 console.log('arr1: ', arr1);
