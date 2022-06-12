@@ -156,3 +156,43 @@ do{
 for(let i = 0; i < 10; i++){
      console.log('for loop')
 }
+
+//break, continue
+// break -- stop/terminate the loop
+// continue -- skip a single itteration
+for(let i = 0; i < 10; i++){
+     if(i%2 == 0) continue;
+     if(i == 7) break;
+     console.log(`for loop ${i}`);
+}
+
+//Nested loop
+for(let i=0; i<5; i++){
+     for(let j=0; j<5; j++){
+          console.log('nested loop')
+     }
+}
+
+
+//alert
+// alert('alert message');
+
+// prompt
+// let age = prompt('Enter your age')
+// let age = prompt('Enter your age', 20);//default value is 20
+// if(age != null) document.write(`Your age is ${age}`);
+// else document.write(`Age field was blank`)
+
+//confirn
+const res = confirm('Are you sure, You want to delete this product');
+if(res) document.write('Item deleted');
+else document.write('Your decesion saved');
+
+
+
+
+
+
+
+
+
