@@ -46,3 +46,15 @@ console.log('obj: ', obj);
 // * -> Multiply
 // / -> Dividion
 // % -> Modulous
+
+
+//Comparison Operator
+// > -- Greater than
+// < -- Lesser than
+// == -- Equal without type check
+// === -- Equal with type check
+// >= -- Greater than equal without type check
+// <= -- Lesser than equal without type check
+// >== -- Greater than equal with type check
+// <== -- Lesser than equal with type check
+
