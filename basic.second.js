@@ -184,15 +184,87 @@ for(let i=0; i<5; i++){
 // else document.write(`Age field was blank`)
 
 //confirn
-const res = confirm('Are you sure, You want to delete this product');
-if(res) document.write('Item deleted');
-else document.write('Your decesion saved');
+// const res = confirm('Are you sure, You want to delete this product');
+// if(res) document.write('Item deleted');
+// else document.write('Your decesion saved');
 
 
 
+//Data Type Conversion
+//Number to String
+let num9 = 10;
+console.log('type of num9: ', typeof num9);
+// num9 = num9.toString();
+num9 = String(num9);
+console.log('type of num9: ', typeof num9);
 
 
+//String to Number
+// let str2 = '50';
+let str2 = 'hello';
+console.log('type of str2: ', typeof str2);
+str2 = Number(str2);
+console.log('str2: ', str2);
+console.log('type of str2: ', typeof str2);
 
 
+//boolean to number
+let bol4 = true;
+bol4 = Number(bol4);
+console.log('bol4: ', bol4); //1
 
+let bol5 = false;
+bol5 = Number(bol5);
+console.log('bol5: ', bol5); //0
 
+// number/string to boolean
+
+let num10 = 0;
+num10 = Boolean(num10);
+console.log('num10: ', num10);
+
+let num11 = 1;
+num11 = Boolean(num11);
+console.log('num11: ', num11);
+
+let str3 = "";
+str3 = Boolean(str3);
+console.log('str3: ', str3);
+
+let str4 = "hello";
+str4 = Boolean(str4);
+console.log('str4: ', str4);
+
+//String Manipulation
+let str5 = 'Amaresh \ Barik';
+console.log('str5: ', str5);
+let str6 = 'Amaresh \n Barik';
+console.log('str6: ', str6);
+let str7 = 'Amaresh \t Barik';
+console.log('str7: ', str7);
+let str8 = 'Amaresh \\ Barik';
+console.log('str8: ', str8);
+
+//Strings are emutable
+let str9 = ' Amaresh Barik ';
+console.log(str9[4]);
+str[4] = 't';
+console.log(str9[4]);
+
+//Substring
+let str10 = 'subString';
+console.log(str10.substr(3,6))
+console.log(str10.substring(2,5));
+
+//String Methods
+console.log(str10.indexOf('tr'));
+console.log(str10.lastIndexOf('sub'));
+
+console.log(str10.trim());
+console.log(str10.split(''));
+
+console.log(str10.toLowerCase());
+console.log(str10.toUpperCase());
+
+console.log(str10.replace('String' , 'Str'));
+console.log(str10.includes('Str'));
