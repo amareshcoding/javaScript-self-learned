@@ -148,17 +148,18 @@ console.log('res: ', res);
 
 
 //variable function declaration
+//Function expression
 const varFunc = function(a, b){
      return a+b;
 }
 let res1 = varFunc(num9, num10);
 console.log('res1: ', res1);
 
+
 //Arrow function
 const arrowFun = (a,b) =>{
      return a+b;
 }
-
 let res2 = varFunc(num9, num10);
 console.log('res2: ', res2);
 
@@ -170,6 +171,22 @@ function argObjFun(){
      console.log(arguments[2]);
 };
 argObjFun(3,6,7);
+
+
+//Anonymous Funtion
+// function(){
+// }
+
+//Immediate Invoked Function
+(function (){
+     let num = 30;
+     console.log('num: ', num);
+     console.log('Invoked')
+})();
+
+
+
+
 
 
 //Inbuilt

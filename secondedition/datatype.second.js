@@ -144,11 +144,9 @@ arr.join(' ');
 console.log('arr: ', arr);
 
 
-
-//
+//Empty an array
 // arr.length = 0;
 // console.log('arr: ', arr);
-
 
 
 //Multidimentional Array
@@ -161,6 +159,7 @@ let mat = [
 //col = 4
 console.log(mat[2][3]);
 
+//Create an array
 let arr1 = new Array(4);
 console.log('arr1: ', arr1);
 
@@ -170,13 +169,7 @@ for(let i = 0; i<arr.length; i++){
 }
 
 
-
-
-
-
-
-
-//Object
+//Object --> key value pair
 let obj = {
      name: "Amaresh",
      age:40,
