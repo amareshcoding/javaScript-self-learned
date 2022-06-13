@@ -168,12 +168,22 @@ arr1[1] = 20;
 arr1[2] = 40;
 console.log('arr1: ', arr1);
 
-
-
 //Array iteration
 for(let i = 0; i<arr.length; i++){
      console.log(arr[i]);
 }
+//For in loop
+for(let num of arr){
+     console.log(num);
+}
+//For in loop
+for(let ind in arr){
+     console.log(arr[ind]);
+}
+
+//Array destructuring
+const [n , k] = [2, 4];
+
 
 
 //Object --> key value pair
@@ -202,6 +212,13 @@ console.log('height' in obj); //false
 for(let key in obj){
      console.log(`${key}: ${obj[key]}`);
 }
+
+// copy an obj
+let obj4 = {...arr};
+console.log('obj4: ', obj4);
+
+
+
 
 //Methods
 const obj2 = {
