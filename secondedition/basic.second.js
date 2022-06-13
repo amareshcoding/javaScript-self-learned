@@ -162,10 +162,14 @@ const arrowFun = (a,b) =>{
 let res2 = varFunc(num9, num10);
 console.log('res2: ', res2);
 
-//
 
-
-
+//Argument object
+function argObjFun(){
+     console.log(arguments.length);
+     console.log(arguments);
+     console.log(arguments[2]);
+};
+argObjFun(3,6,7);
 
 
 //Inbuilt
