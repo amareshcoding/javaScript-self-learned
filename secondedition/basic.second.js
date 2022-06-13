@@ -120,14 +120,56 @@ for(let i=0; i<5; i++){
 //alert
 // alert('alert message');
 
+
 // prompt
 // let age = prompt('Enter your age')
 // let age = prompt('Enter your age', 20);//default value is 20
 // if(age != null) document.write(`Your age is ${age}`);
 // else document.write(`Age field was blank`)
 
+
 //confirn
 // const res = confirm('Are you sure, You want to delete this product');
 // if(res) document.write('Item deleted');
 // else document.write('Your decesion saved');
 
+
+//Functions
+//User Define
+//Parameter -->received value 
+//Argument -->send at function-call
+function newFunction(a,b){
+     return a+b;
+}
+let num9 = 30;
+let num10 = 40;
+let res = newFunction(num9, num10);
+console.log('res: ', res);
+
+
+//variable function declaration
+const varFunc = function(a, b){
+     return a+b;
+}
+let res1 = varFunc(num9, num10);
+console.log('res1: ', res1);
+
+//Arrow function
+const arrowFun = (a,b) =>{
+     return a+b;
+}
+
+let res2 = varFunc(num9, num10);
+console.log('res2: ', res2);
+
+
+//Argument object
+function argObjFun(){
+     console.log(arguments.length);
+     console.log(arguments);
+     console.log(arguments[2]);
+};
+argObjFun(3,6,7);
+
+
+//Inbuilt
