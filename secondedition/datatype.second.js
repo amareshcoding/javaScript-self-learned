@@ -161,7 +161,14 @@ console.log(mat[2][3]);
 
 //Create an array
 let arr1 = new Array(4);
+
+//Add elements
+arr1[0] = 10;
+arr1[1] = 20;
+arr1[2] = 40;
 console.log('arr1: ', arr1);
+
+
 
 //Array iteration
 for(let i = 0; i<arr.length; i++){
@@ -176,5 +183,50 @@ let obj = {
 };
 console.log('obj: ', obj);
 
+//dot notation
+console.log(obj.name);
+
+//bracket notation
+console.log(obj['name']);
+
+//add property
+obj.hobby = 'cricket';
+console.log('obj: ', obj);
+
+//in operator
+console.log('name' in obj); //true
+console.log('height' in obj); //false
+
+//Object iteration
+
+for(let key in obj){
+     console.log(`${key}: ${obj[key]}`);
+}
+
+//Methods
+const obj2 = {
+     a: 10,
+     b: 20,
+     add: function(){ //add method
+          return this.a+this.b;
+     },
+     sub(){ //sub method
+          return this.b - this.a;
+     }
+}
+obj2.hello = ()=>{ //hello method
+     console.log('hello...');
+}
+console.log('obj2: ', obj2);
+
+
+
+
+
+//Object creation
 let obj1 = Object.create(null);
+
+//Adding key value
+obj1.firstName = 'Amaresh';
+obj1.lastName = 'Barik';
 console.log('obj1: ', obj1);
