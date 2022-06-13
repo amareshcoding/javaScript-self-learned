@@ -223,10 +223,65 @@ console.log('obj2: ', obj2);
 
 
 
-//Object creation
+//Object.create
 let obj1 = Object.create(null);
-
 //Adding key value
 obj1.firstName = 'Amaresh';
 obj1.lastName = 'Barik';
 console.log('obj1: ', obj1);
+
+//new Object;
+let obj3 = new Object();
+console.log('obj3: ', obj3);
+
+
+//getter and setter methods
+const Employee = {
+
+     name:"",
+     age:0,
+
+     set setName(n){
+          this.name = n;
+     },
+     set setAge(a){
+          this.age = a;
+     },
+     get getData(){
+          return `Name: ${this.name}, Age: ${this.age}`
+     },
+}
+Employee.setName = 'Amaresh';
+Employee.setAge = 30;
+console.log('Employee: ', Employee.getData);
+
+
+// Object Constructor
+function Student(fn,ln,ag,cs){
+     this.firstNane = fn;
+     this.lastName = ln;
+     this.age = ag;
+     this.class = cs;
+}
+const student1 = new Student('Pablo', 'Pandey', 15, 10);
+student1.nationality = 'Indian';
+console.log('student1: ', student1);
+
+//Object Prototype
+Student.prototype.printName = function(){
+     return `My name is ${this.firstNane} ${this.lastName}`;
+}
+console.log(student1.printName());
+
+
+//Nested Object
+const user = {
+     id:12,
+     name:'Ajeet',
+     mail:'abc@gmail.com',
+     address:{
+          city: 'bangalore',
+          state: 'Karnataka',
+          pin: '123456',
+     },
+}
