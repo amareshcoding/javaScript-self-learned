@@ -272,3 +272,16 @@ Student.prototype.printName = function(){
      return `My name is ${this.firstNane} ${this.lastName}`;
 }
 console.log(student1.printName());
+
+
+//Nested Object
+const user = {
+     id:12,
+     name:'Ajeet',
+     mail:'abc@gmail.com',
+     address:{
+          city: 'bangalore',
+          state: 'Karnataka',
+          pin: '123456',
+     },
+}
