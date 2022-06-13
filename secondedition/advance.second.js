@@ -11,3 +11,4 @@ let num = 10;
 function localScope(){
      let num = 30;
 }
+

@@ -148,17 +148,18 @@ console.log('res: ', res);
 
 
 //variable function declaration
+//Function expression
 const varFunc = function(a, b){
      return a+b;
 }
 let res1 = varFunc(num9, num10);
 console.log('res1: ', res1);
 
+
 //Arrow function
 const arrowFun = (a,b) =>{
      return a+b;
 }
-
 let res2 = varFunc(num9, num10);
 console.log('res2: ', res2);
 
@@ -172,4 +173,44 @@ function argObjFun(){
 argObjFun(3,6,7);
 
 
+//Anonymous Funtion
+// function(){
+// }
+
+//Immediate Invoked Function
+(function (){
+     let num = 30;
+     console.log('num: ', num);
+     console.log('Invoked')
+})();
+
+
+
+
 //Inbuilt
+
+//Math Properties
+console.log(Math.PI);
+console.log(Math.E);
+
+//
+console.log(Math.floor(6.8));
+console.log(Math.round(4.5));
+console.log(Math.ceil(7.3));
+console.log(Math.trunc(4.5));
+console.log(Math.pow(10,3));
+console.log(Math.sqrt(25));
+console.log(Math.cbrt(9));
+console.log(Math.min(20,49));
+console.log(Math.max(32,56));
+console.log(Math.floor(Math.random()*10+1));
+console.log(Math.floor(Math.random() * (25 - 15) + 15));
+
+
+
+//Date 
+const time = new Date();
+console.log('time: ', time);
+
+const time1 = new Date(2018,10,4,10,33,12,5);
+console.log('time1: ', time1);
