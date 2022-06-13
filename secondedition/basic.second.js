@@ -212,5 +212,14 @@ console.log(Math.floor(Math.random() * (25 - 15) + 15));
 const time = new Date();
 console.log('time: ', time);
 
+//create a date
 const time1 = new Date(2018,10,4,10,33,12,5);
 console.log('time1: ', time1);
+time1.setDate(time1.getDate() + 50);
+//
+
+//methods
+console.log(time.getDate());
+console.log(time.getDay());
+console.log(time.getFullYear());
+console.log(time.getMonth());
