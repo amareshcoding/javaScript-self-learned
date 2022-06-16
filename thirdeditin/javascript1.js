@@ -44,10 +44,20 @@ console.log('arr3: ', arr3);
 let arr4 = [].concat(arr);
 console.log('arr4: ', arr4);
 
+const chars = [...'abcdefghijklmnopqrstuvwxyz'];
+console.log('chars: ', chars);
 
+//Copy of an Obj
+const person = {
+     firstName: 'Amaresh',
+     lastName: 'Barik',
+}
 
+const {...restProps} = person;
+console.log('restProps: ', restProps);
 
-
+const newObj = {...person};
+console.log('newObj: ', newObj);
 
 
 

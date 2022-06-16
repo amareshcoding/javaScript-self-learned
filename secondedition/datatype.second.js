@@ -172,7 +172,7 @@ console.log('arr1: ', arr1);
 for(let i = 0; i<arr.length; i++){
      console.log(arr[i]);
 }
-//For in loop
+//For of loop
 for(let num of arr){
      console.log(num);
 }
@@ -184,6 +184,22 @@ for(let ind in arr){
 //Array destructuring
 const [n , k] = [2, 4];
 
+//copy an array
+let arr5 = [...arr]; //spread operator
+arr5[0] = 28;
+console.log('arr: ', arr);
+console.log('arr5: ', arr5);
+
+let arr6 = arr.slice(0);
+arr6.push(33);
+console.log('arr: ', arr);
+console.log('arr6: ', arr6);
+
+let arr7 = [].concat(arr);
+console.log('arr7: ', arr7);
+
+const chars = [...'abcdefghijklmnopqrstuvwxyz'];
+console.log('chars: ', chars);
 
 
 //Object --> key value pair
@@ -218,6 +234,19 @@ let obj4 = {...arr};
 console.log('obj4: ', obj4);
 
 
+//Object destructuring
+const person = {
+     firstName: 'Amaresh',
+     lastName: 'Barik',
+}
+const {firstName, lastName} = person;
+console.log('firstName: ', firstName);
+const {firstName:fn, lastName:ln} = person;
+console.log('ln: ', ln);
+const {...restProps} = person;
+console.log('restProps: ', restProps);
+const newObj = {...person};
+console.log('newObj: ', newObj);
 
 
 //Methods
@@ -235,9 +264,6 @@ obj2.hello = ()=>{ //hello method
      console.log('hello...');
 }
 console.log('obj2: ', obj2);
-
-
-
 
 
 //Object.create
@@ -302,3 +328,21 @@ const user = {
           pin: '123456',
      },
 }
+
+//array of Objects
+const users = [
+     {id: 1, name: 'Harshit', age: 30},
+     {id: 2, name: 'Biswajit', age: 20},
+     {id: 3, name: 'Vishal', age: 22},
+];
+
+for(let user of users){
+     console.log(user.id);
+}
+
+const [{name:userName}, user2, {id, age}] = users;
+console.log('userName: ', userName);
+console.log('user2: ', user2);
+console.log('id: ', id);
+console.log('age: ', age);
+console.log('name: ', name);
