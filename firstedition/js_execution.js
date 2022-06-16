@@ -10,10 +10,13 @@ console.log(window);
 console.log(myFunc);
 // console.log(myFunc1);//Error
 
+
 //function declaration store in GEC
 function myFunc(){
      console.log('myFunc is called');
 }
+
+
 //function as a variable 
 //behave same as variable
 const myFunc1 = function (){
