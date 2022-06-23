@@ -77,13 +77,6 @@ callFunc1();
 
 
 
-
-
-
-
-
-
-
 function printFullNameAgain(firstName, lastName){
      this.age = 25;
      this.printNameAgain = function(){
