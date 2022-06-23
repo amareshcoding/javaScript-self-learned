@@ -29,7 +29,7 @@
 //iterable
 //index based
 // let person = new Map([['lastname', 'barik'],['company','masai']]);
-// // let person = new Map();
+// let person = new Map();
 // person.set('firstname', 'Amaresh');
 // person.set('age', 10);
 // person.set('city', 'bangalore');
